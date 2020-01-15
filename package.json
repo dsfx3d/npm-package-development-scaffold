@@ -1,0 +1,65 @@
+{
+  "name": "npm-package-typescript-development-scaffold",
+  "version": "0.0.0-development",
+  "description": "typescript babel jest prettier based package building boilerplate",
+  "main": "src/index",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "commitizen:setup": "commitizen init cz-conventional-changelog --save-dev --exact --force",
+    "semantic-release:setup": "npx semantic-release-cli setup",
+    "test": "jest --coverage",
+    "lint": "prettier --check \"src/**/*.ts\"",
+    "lint:fix": "tslint --fix -p ./",
+    "semantic-release": "semantic-release",
+    "precommit": "npm run lint && npm run test",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsfx3d/npm-package-typescript-development-scaffold.git"
+  },
+  "keywords": [
+    "typescript",
+    "babel",
+    "jest",
+    "prettier",
+    "travis-ci",
+    "npm-package",
+    "scaffold",
+    "boilerplate"
+  ],
+  "author": "dsfx3d <dsfx3d@gmail.com> (https://dsfx3d.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsfx3d/npm-package-typescript-development-scaffold/issues"
+  },
+  "homepage": "https://github.com/dsfx3d/npm-package-typescript-development-scaffold#readme",
+  "devDependencies": {
+    "@babel/cli": "7.8.3",
+    "@babel/core": "7.8.3",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@babel/preset-typescript": "7.8.3",
+    "@types/jest": "24.0.25",
+    "@types/node": "13.1.6",
+    "commitizen": "4.0.3",
+    "cz-conventional-changelog": "3.0.2",
+    "jest": "24.9.0",
+    "prettier": "1.19.1",
+    "semantic-release": "^16.0.1",
+    "ts-jest": "24.3.0",
+    "tslint": "5.20.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-plugin-prettier": "2.1.0",
+    "typescript": "3.7.4"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
