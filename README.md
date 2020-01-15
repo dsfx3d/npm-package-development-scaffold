@@ -12,7 +12,6 @@ You can fork it :fork_and_knife: or clone it :sheep: and make it your own.
 
 Or copy this repository in your system using [degit](https://www.npmjs.com/package/degit):
 
-
 ```bash
 npx degit dsfx3d/npm-package-development-scaffold
 ```
@@ -28,21 +27,26 @@ In a few steps, you can start building npm package:
 2. Create an account on [NPM](https://www.npmjs.com/package/degit). If you already have an account skip this step.
 
 3. Install project dependencies:
+
    ```bash
    npm install
    ```
+
 4. setup semantic-release
+
    ```bash
    npm run setup:release
    ```
+
    **Important:** Always use commit script to commit your work. Otherwise, the automatic release won't be triggered when you push to Github.
+
    ```bash
    npm run commit
    ```
 
 5. And you're ready to develop :muscle:. You can now commit and push to GitHub. On every feature, fix and breaking commit your package will be released on noth GitHub and NPM. You don't have to worry about the
 
-## What's included?
+## What's included
 
 ### Typescript
 
@@ -113,11 +117,12 @@ npm run bundle
 npm run commit
 ```
 
-
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update the tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
