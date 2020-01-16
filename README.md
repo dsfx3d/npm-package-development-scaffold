@@ -20,9 +20,9 @@ npx degit dsfx3d/npm-package-development-scaffold
 
 In a few steps, you can start building npm package:
 
-> If you've copied the repository using degit, push an initial commit to github before you begin.
+> If you've copied the repository using degit, setup your github before you begin.
 
-1. Login to [Travis](https://travis-ci.org/) using your GitHub account.
+1. Login to [Travis](https://travis-ci.org/) using your GitHub account to allow permissions to track changes in your repository.
 
 2. Create an account on [NPM](https://www.npmjs.com/package/degit). If you already have an account skip this step.
 
@@ -38,15 +38,22 @@ In a few steps, you can start building npm package:
    npm run setup:release
    ```
 
-   **Important:** Always use commit script to commit your work. Otherwise, the automatic release won't be triggered when you push to Github.
+   **Important:** Always use commit script in `package.json` to commit your work. Otherwise, release won't be triggered when you push your changes.
 
    ```bash
    npm run commit
    ```
 
-5. And you're ready to develop :muscle:. You can now commit and push to GitHub. On every feature, fix and breaking commit your package will be released on noth GitHub and NPM. You don't have to worry about the
+5. And you're ready to develop :muscle:
+   From now on all you have to do is:
 
-## What's included
+   1. Make changes to the repository.
+   ii. Commit using `npm run commit`.
+   iii. push changes to remote master branch.
+
+:dart: Voila it's a release
+
+## What's included?
 
 ### Typescript
 
@@ -78,14 +85,13 @@ Travis will test and release your package on NPM whenever you make a master comm
 
 [semantic-release](https://github.com/semantic-release/semantic-release) automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
 
-When you commit with [Commitizen](https://www.npmjs.com/package/commitizen), you'll be prompted to fill out any required commit fields at commit time. No more digging through CONTRIBUTING.md to find what the preferred format is. Get instant feedback on your commit message formatting and be prompted for required fields.
-
+For semantic-release to determine the next version, you are expected to follow a certian format in your commit messages. But with Commitizen CLI you don't have to worry about it. When you commit with [Commitizen](https://www.npmjs.com/package/commitizen), you'll be prompted to fill out any required commit fields at commit time and it will generate the formatted commit message for you. Now semantic-release can determine if your commit will be a release and how to bump the version number.
 
 This removes the immediate connection between human emotions and version numbers, strictly following the Semantic Versioning specification.
 
 ### Webpack (bonus)
 
-If you wanna bundle your package for browsers, you can do that.
+If you wanna bundle your build for browsers, you can do that here.
 
 ## Scripts
 
