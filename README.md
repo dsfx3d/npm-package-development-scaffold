@@ -72,11 +72,14 @@ For everything else required for linting your code, there's always [tslint](http
 
 Travis will test and release your package on NPM whenever you make a master commit on GitHub. You ask how? the next pointer is for you.
 
-### Sementic Release CLI
+### Sementic Release CLI + Commitizen CLI
 
 > Trust us, this will change your workflow for the better. – egghead.io
 
 [semantic-release](https://github.com/semantic-release/semantic-release) automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
+
+When you commit with [Commitizen](https://www.npmjs.com/package/commitizen), you'll be prompted to fill out any required commit fields at commit time. No more digging through CONTRIBUTING.md to find what the preferred format is. Get instant feedback on your commit message formatting and be prompted for required fields.
+
 
 This removes the immediate connection between human emotions and version numbers, strictly following the Semantic Versioning specification.
 
