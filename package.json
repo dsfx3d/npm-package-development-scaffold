@@ -48,7 +48,7 @@
     "@babel/core": "7.8.3",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-proposal-object-rest-spread": "7.8.3",
-    "@babel/preset-env": "7.8.3",
+    "@babel/preset-env": "7.8.7",
     "@babel/preset-typescript": "7.8.3",
     "@types/jest": "24.0.25",
     "@types/node": "13.1.6",
@@ -71,5 +71,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.8.7"
   }
 }
