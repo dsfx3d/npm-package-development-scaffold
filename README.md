@@ -53,7 +53,7 @@ In a few steps, you can start building npm package:
 
 :dart: Voila it's a release
 
-## What's included?
+## Includes
 
 ### Typescript
 
