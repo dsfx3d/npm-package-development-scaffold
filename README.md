@@ -73,11 +73,9 @@ For everything else required for linting your code, there's always [tslint](http
 
 [Babel](https://babeljs.io/) is an OG when it comes to transpilers. If you are wondering why are we using babel if we already have typescript, you might wanna read this post. [TypeScript With Babel: A Beautiful Marriage](https://iamturns.com/typescript-babel/).
 
-### Travis CI
+### GitHub Actions
 
-[Travis CI](https://travis-ci.org/) is a hosted continuous integration service used to build and test software projects hosted at GitHub. Travis CI provides various paid plans for private projects and :sparkles: **a free plan for open source** :sparkles:.
-
-Travis will test and release your package on NPM whenever you make a master commit on GitHub. You ask how? the next pointer is for you.
+[GitHub Actions](https://github.com/features/actions) makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.
 
 ### Sementic Release CLI + Commitizen CLI
 
@@ -85,45 +83,45 @@ Travis will test and release your package on NPM whenever you make a master comm
 
 [semantic-release](https://github.com/semantic-release/semantic-release) automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
 
-For semantic-release to determine the next version, you are expected to follow a certian format in your commit messages. But with Commitizen CLI you don't have to worry about it. When you commit with [Commitizen](https://www.npmjs.com/package/commitizen), you'll be prompted to fill out any required commit fields at commit time and it will generate the formatted commit message for you. Now semantic-release can determine if your commit will be a release and how to bump the version number.
+For semantic-release to determine the next version, you are expected to follow a certian format in your commit messages but with Commitizen CLI you don't have to worry about it. When you commit with [Commitizen](https://www.npmjs.com/package/commitizen), you'll be prompted to enter the required information and it will generate the formatted commit message for you. Now semantic-release can determine if your commit will be a release and how to bump the version number.
 
-This removes the immediate connection between human emotions and version numbers, strictly following the Semantic Versioning specification.
+This removes the immediate connection between human emotions and version numbers, strictly following the [Sem'Ver](https://semver.org/) specification.
 
 ### Webpack (bonus)
 
-If you wanna bundle your build for browsers, you can do that here.
+If you wanna bundle your build for browsers.
 
 ## Scripts
 
 ### Linting
 
-   ```bash
-   npm run lint
-   npm run lint:fix
-   ```
+```bash
+yarn lint
+yarn lint:fix
+```
 
 ### Test
 
 ```bash
-npm run test
+yarn test
 ```
 
 ### Build Package
 
 ```bash
-npm run build
+yarn build
 ```
 
 ### Bundle package build
 
 ```bash
-npm run bundle
+yarn bundle
 ```
 
 ### Commit
 
 ```bash
-npm run commit
+yarn commit
 ```
 
 ## Contributing
