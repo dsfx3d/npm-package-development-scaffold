@@ -22,36 +22,26 @@ In a few steps, you can start building npm package:
 
 > If you've copied the repository using degit, setup your github before you begin.
 
-1. Login to [Travis](https://travis-ci.org/) using your GitHub account to allow permissions to track changes in your repository.
+1. Create an account on [NPM](https://www.npmjs.com/package/degit). If you already have an account skip this step.
 
-2. Create an account on [NPM](https://www.npmjs.com/package/degit). If you already have an account skip this step.
-
-3. Install project dependencies:
+2. Install project dependencies:
 
    ```bash
-   npm install
+   yarn
    ```
 
-4. setup semantic-release
+3. setup semantic-release
 
    ```bash
-   npm run setup:release
+   yarn setup:release
    ```
 
-   **Important:** Always use commit script in `package.json` to commit your work. Otherwise, release won't be triggered when you push your changes.
-
-   ```bash
-   npm run commit
-   ```
-
-5. And you're ready to develop :muscle:
+4. And you're ready to flex your code muscles :muscle:
    From now on all you have to do is:
 
    1. Make changes to the repository.
-   ii. Commit using `npm run commit`.
-   iii. push changes to remote master branch.
-
-:dart: Voila it's a release
+   ii. Commit using `yarn commit`.
+   iii. push changes to master branch.
 
 ## Includes
 
